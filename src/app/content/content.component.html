@@ -1,0 +1,66 @@
+<form class=" wrapper clr-form  clr-form-horizontal my-3 bg-grey">
+   <h1>Group Override</h1>
+   <br>
+   <div class="form-row">
+        <div class="form-group col-md-3">
+            <label>Plan Year*</label> 
+            <app-seler ></app-seler>
+        </div>
+        <div class="form-group col-md-3">
+            <label>Plan Option*</label>
+            <app-search></app-search>
+        </div>
+        <div class="form-group col-md-3">
+            <label>Load Plan*</label>
+            <app-search></app-search>
+        </div>
+        <div class="form-group col-md-3">
+            <label>Base Plan</label>
+            <app-search></app-search>
+        </div>
+    </div>
+
+<br>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+          <label>Primary Network Physician </label> 
+          <app-search></app-search>
+        </div>
+        <div class="form-group col-md-3">
+            <label>Primary Network Facility</label>
+            <app-search></app-search>
+        </div>
+        <div class="form-group col-md-3">
+            <label>Secoundary Network Physician </label> 
+            <app-search></app-search>
+        </div>
+        <div class="form-group col-md-3">
+                <label>Secoundary Network Facility</label>
+                <app-search></app-search>
+        </div>
+    </div>
+        <br>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+          <label>Plan Owner*  </label> 
+          <app-search></app-search>
+        </div>
+        <div class="form-group col-md-3">
+            <label>State  </label> 
+            <app-seler></app-seler>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="input-group form-row">
+        <div class="input-group-prepend col-md-9 input-group-sm">
+          <span class="input-group-text ">Custom Notes</span>
+          <textarea class="form-control" ></textarea>
+        </div>
+    </div><br><br>
+    <button type="submit" class="btn btn-primary" color="primary" >
+        Save
+      </button>
+      <button class="btn can btn-primary" color="warn" type="reset">Cancel </button>
+    
+</form>

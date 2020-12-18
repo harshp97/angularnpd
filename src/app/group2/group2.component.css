@@ -1,0 +1,23 @@
+.wrapper{
+    margin-left: 53px ;
+    margin-right: 53px;
+    margin-top: 50px;
+    padding-top: 95px;
+    overflow: visible;
+}
+.header {
+    text-align: center;
+    padding: .3rem;
+    width: 50%;
+    background-color: rgba(231, 221, 221, 0.493);
+  }
+  form .mat-raised-button {
+    margin-right: 8px;
+  }
+  .cancel-button{
+    text-align: center;
+  }
+  .submit-button{
+    
+    text-align: center;
+  }

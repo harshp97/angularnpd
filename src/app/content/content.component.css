@@ -1,0 +1,15 @@
+.wrapper{
+    margin-left: 53px ;
+    margin-right: 53px;
+    margin-top: 250px;
+    padding-top: 95px;
+    overflow: visible;
+}
+.btn{
+    cursor: pointer;
+    text-align: center;
+}
+
+.input-group-sm{
+    height: 125px;
+}

@@ -1,0 +1,232 @@
+<!--
+    <div class="wrapper">
+    -->
+    <!-- Sidebar -->
+  <!--  <nav id="sidebar">
+
+        <div class="sidebar-header ">
+            <h3>Bootstrap Sidebar</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Sidebar Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</div>
+
+
+
+
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+
+}
+
+#sidebar {
+    background: #4A7729;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 10px;
+    background: #4A7729;
+    cursor: pointer;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #4A7729;
+}
+
+#sidebar ul p {
+    color: #fff;
+    font-size: 21px;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #4A7729;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #4A7729;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #4A7729;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #4A7729;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form clrForm clrLayout="horizontal" class="wrapper clr-form clr-form-horizontal my-3 bg-white">
+<h1>Group Override</h1>
+   
+    <clr-input-container>
+        <label class="clr-col-30 clr-col-">Plan Year</label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper> Please Enter Plan Year</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-30 clr-col-">Plan Option</label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter Plan Option</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-30 clr-col-">Load Plan</label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter Load Plan </clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-30 clr-col-">Base Plan</label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter Base Plan</clr-control-helper>
+        <clr-control-error>error</clr-control-error>
+      </clr-input-container>
+
+      <clr-input-container>
+        <label class="clr-col-30 clr-col-">Primary Network Physician </label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter Primary Network Physician</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-12 clr-col-md-4">Primary Network Facility  </label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese EnterPrimary Network Facility</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-12 clr-col-md-4">Secondary Network Physician </label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter Secondary Network Physician</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-12 clr-col-md-4">Secondary Network Facility  </label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter Secondary Network Facility</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-12 clr-col-md-4">Plan Owner </label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter Plan Owner</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-12 clr-col-md-4">State </label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Plaese Enter State</clr-control-helper>
+      </clr-input-container>
+      <clr-input-container>
+        <label class="clr-col-12 clr-col-md-4">Custom Notes </label>
+        <input class="clr-col-12 clr-col-md-8" clrInput type="text" name="example" required />
+        <clr-control-helper>Please Enter Custom Note</clr-control-helper>
+      </clr-input-container>
+</form>
+
+ 
+

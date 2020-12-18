@@ -1,0 +1,20 @@
+
+.site-footer {
+    position: bottom;
+	overflow: hidden;
+    bottom: 0;
+    font-size: 15px;
+    line-height: 15px;
+    margin-left: 0px;
+    color: #737373;
+}
+
+.site-footer hr{
+    width: 90%;
+    border-top-color: #bbb;
+    opacity: 2.1;
+}
+
+.copyright-text{
+    margin: 0px;
+}
