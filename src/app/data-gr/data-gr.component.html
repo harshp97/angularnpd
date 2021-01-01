@@ -1,0 +1,71 @@
+<div class="main-container ">
+	<div class="content-container ">
+		<div class="content-area">
+      <div class="dg-wrap main-grid">
+        <div class="example-spacer aln-btn" >
+            <div class="example-button-row">
+        <a>
+            <button type="button" mat-raised-button  (click)="selectAllupdateCurrent()"><mat-icon>add</mat-icon>Select All</button>
+        </a>
+        <a>
+            <button type="button" mat-raised-button  (click)="clearSelection()"> <mat-icon >close</mat-icon>clear  selection</button>
+        </a> 
+        </div>
+      </div>
+        <clr-dg-action-bar *ngIf="selected.length">
+            <div  class="aln-btn">
+        <mat-toolbar>
+            <span class="example-spacer"></span>
+            <section>
+                <div class="example-button-row">
+                    <button type="button" mat-raised-button color="primary" (click)="openDialog()">
+                        <mat-icon>edit</mat-icon>Edit
+                    </button>
+                     
+                    <button type="button" mat-raised-button color="warn" (click)="openDialogdel()">
+                        <mat-icon>delete</mat-icon>Delete
+                    </button>
+                </div>
+            </section>
+        </mat-toolbar>
+            </div>
+         </clr-dg-action-bar>
+
+        
+         <clr-datagrid [(clrDgSelected)]="selected" #dg>
+            <clr-dg-column clrDgField="planYear" >Plan Year</clr-dg-column>
+            <clr-dg-column clrDgField="planOption">Plan Option</clr-dg-column>
+            <clr-dg-column clrDgField="loadType">Load Type</clr-dg-column>
+            <clr-dg-column clrDgField="basePlan">Base Plan</clr-dg-column>
+            <clr-dg-column clrDgField="networkPhysician.primary">Primary Network Physician</clr-dg-column>
+            <clr-dg-column clrDgField="networkFacility.primary">Primary Network Facility</clr-dg-column>
+            <clr-dg-column clrDgField="networkPhysician.secondary">Secondary Network Physician</clr-dg-column>
+            <clr-dg-column clrDgField="networkFacility.secondary">Secondary Network Facility</clr-dg-column>
+            <clr-dg-column clrDgField="planOwner">Plan Owner</clr-dg-column>
+            <clr-dg-column clrDgField="states">State</clr-dg-column>
+    
+            <clr-dg-row *clrDgItems="let user of users" [clrDgItem]="user">
+                <clr-dg-cell>{{user.planYear}}</clr-dg-cell>
+                <clr-dg-cell>{{user.planOption}}</clr-dg-cell>
+                <clr-dg-cell>{{user.loadType}}</clr-dg-cell>
+                <clr-dg-cell>{{user.basePlan}}</clr-dg-cell>
+                <clr-dg-cell>{{user.networkPhysician.primary}}</clr-dg-cell>
+                <clr-dg-cell>{{user.networkFacility.primary}}</clr-dg-cell>
+                <clr-dg-cell>{{user.networkPhysician.secondary}}</clr-dg-cell>
+                <clr-dg-cell>{{user.networkFacility.secondary}}</clr-dg-cell>
+                <clr-dg-cell>{{user.planOwner}}</clr-dg-cell>
+                <clr-dg-cell>{{user.states}}</clr-dg-cell>
+            </clr-dg-row>
+    
+            <clr-dg-footer>
+                {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
+                of {{pagination.totalItems}} users
+                <clr-dg-pagination #pagination></clr-dg-pagination>
+            </clr-dg-footer>
+     </clr-datagrid>
+
+      </div>
+      
+		</div>
+	</div>
+</div>
