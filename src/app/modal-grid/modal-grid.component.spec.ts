@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidebComponent } from './sideb.component';
+import { ModalGridComponent } from './modal-grid.component';
 
-describe('SidebComponent', () => {
-  let component: SidebComponent;
-  let fixture: ComponentFixture<SidebComponent>;
+describe('ModalGridComponent', () => {
+  let component: ModalGridComponent;
+  let fixture: ComponentFixture<ModalGridComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidebComponent ]
+      declarations: [ ModalGridComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidebComponent);
+    fixture = TestBed.createComponent(ModalGridComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

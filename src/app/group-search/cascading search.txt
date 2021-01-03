@@ -1,0 +1,68 @@
+constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  form = new FormGroup({});
+  model: any = {};
+  options: FormlyFormOptions = {
+    formState: {
+      selectOptionsData: {
+        planOptions: [
+          { id: '1', value: '0730/001', planyearId: '1' },
+          { id: '2', value: '0731/002', planyearId: '1' },
+          { id: '3', value: '0732/007', planyearId: '2' },
+          { id: '4', value: '0733/(2019)', planyearId: '2' },
+          { id: '4', value: '0734/(2018)', planyearId: '3' },
+        ],
+      },
+    },
+  };
+
+  fields: FormlyFieldConfig[] = [
+    {
+      fieldGroupClassName: 'row',
+      fieldGroup: [
+       {
+      className: 'col-3',
+      key: 'planYear',
+      type: 'select',
+      templateOptions: {
+        label: 'Plan Year',
+        options: [
+          { id: '1', value: '2020' },
+          { id: '2', value: '2019' },
+          { id: '3', value: '2018' },
+        ],
+        valueProp: 'id',
+        labelProp: 'value',
+        required: true,
+        placeholder: 'Plan Year'
+         },
+       },
+      {
+      className: 'col-3',
+      key: 'planOption',
+      type: 'select',
+      templateOptions: {
+        label: 'Plan Option',
+        options: [],
+        valueProp: 'id',
+        labelProp: 'value',
+        required: true,
+        placeholder: 'Plan Option'
+      },
+      expressionProperties: {
+        'templateOptions.disabled': '!model.planYear',
+        'templateOptions.options': 'formState.selectOptionsData.planOptions.filter(planOption => planOption.planyearId === model.planYear)',
+        // reset model when updating select options
+        'model.planOption': `field.templateOptions.options.find(o => o.id === model.planOption) ? model.planOption:null`,
+      },
+       },
+      ],
+    },
+  ];
+
+  submit() {
+    alert(JSON.stringify(this.model));
+  }

@@ -9,9 +9,9 @@
   </div>
   <div class="header-actions">
       <clr-dropdown>
-        <button clrDropdownTrigger class="nav-text"  aria-label="open user profile">
+        <button clrDropdownTrigger class="nav-text" aria-label="open user profile">
           hpatil4@humana.com 
-            <clr-icon shape="user" class="is-solid" size="35"></clr-icon>
+            <clr-icon shape="user" class="is-solid" size="25"></clr-icon>
           </button>
           <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
             <a clrDropdownItem href="#" >About</a>
@@ -21,17 +21,16 @@
   </div>
 </header>
 
-
 <nav class="subnav">
   <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" > Playbook Mapping Screen</a>
+        <a class="nav-link" href="#" routerLinkActive="Active" > Playbook Mapping Screen</a>
+      </li>
+      <li class=" nav-item">
+        <a href="#" class="active nav-link" routerLinkActive="Active" >Group Override</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" >Group Override</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" >Reports</a>
+          <a class="nav-link" routerLinkActive="Active" >Reports</a>
       </li>
     </ul>
 </nav>

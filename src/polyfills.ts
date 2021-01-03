@@ -65,3 +65,8 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+import '@webcomponents/custom-elements';
+import '@clr/icons';
+import 'zone.js/dist/zone';
+import 'web-animations-js';
+ import 'classlist.js';

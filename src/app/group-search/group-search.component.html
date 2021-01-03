@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="sub-head">
+        <nav class="subnav">
+          <ul class="nav">
+              <li class="nav-item">
+                <a class=" active nav-link" > Search</a>
+              </li>
+              <li class="nav-item">
+                <a class=" nav-link" >Add Group General Override</a>
+              </li>
+            </ul> 
+        </nav>
+    </div>
+
+    <div  style=" overflow: visible; margin-top: 25px; ">
+
+        <form  [formGroup]="form" (ngSubmit)="submit()">
+            <formly-form  [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+        
+        <div class="overf">
+            <app-data-gr></app-data-gr>
+            
+        </div>
+
+       </form>
+
+    </div>
+
+
+</div>

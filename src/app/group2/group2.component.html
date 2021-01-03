@@ -1,22 +1,36 @@
-<div class="wrapper clr-form  clr-form-horizontal my-3 bg-grey">
-  <h1>Group Override</h1>
+<div class="wrapper">
+  <div class="sub-head">
 
- <div style="text-align: center; overflow: hidden;">
-	<form [formGroup]="form" (ngSubmit)="submit()"  >
+    <nav class="subnav">
+      <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" > Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="active nav-link" >Add Group General Override</a>
+          </li>
+        </ul>
+    </nav>
+
+  </div>
+
+  <h1 style="margin-bottom: 17px; margin-top:15px ;">Group Override</h1>
+
+ <div style="text-align: center; overflow: visible;">
+    <form  [formGroup]="form" (ngSubmit)="submit()"  >
         <formly-form [model]="model" [fields]="fields"  [form]="form"></formly-form>
       <div>
-        <button type="submit" class="btn btn-primary " [disabled]="!form.valid">Save</button>
-        <button type="reset" class="btn cancel-button " (click)="resetAlert()" >Reset</button>
-        <button type="cancel" class="btn cancel-button " (click)="cancelAlert()" >Cancel</button>
-
+        <button type="submit" mat-raised-button color="primary" [disabled]="!form.valid" >Save</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset" mat-raised-button color="warn" (click)="resetAlert()" >Reset</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="cancel" mat-raised-button (click)="cancelAlert()" >Cancel</button>
       </div>
     </form>
       
-</div>
+  </div>
 
-<br/><br/>
-<div>
-	<pre> {{model | json }} </pre>
-</div>
+  <br/><br/>
+    <div>
+	    <pre> {{model | json }} </pre>
+    </div>
 
 </div>
