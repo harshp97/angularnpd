@@ -1,11 +1,14 @@
 .site-footer {
     position: bottom;
-	overflow: hidden;
+	  overflow: hidden;
     bottom: 0;
     font-size: 15px;
     line-height: 15px;
     margin-left: 0px;
     color: #737373;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .site-footer hr{
