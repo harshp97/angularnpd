@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ClrDatagrid } from "@clr/angular";
-import { USERS } from './users';
+import { RECORDS } from './record';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalGridComponent } from '../modal-grid/modal-grid.component';
 import { ModalGridDelComponent } from '../modal-grid-del/modal-grid-del.component';
@@ -14,8 +14,9 @@ export class DataGrComponent implements OnInit {
   @ViewChild('dg', {static: true}) datagrid: ClrDatagrid;
 
 
-  users = USERS;
+  records = RECORDS;
   selected: any = [];
+  selectedRecord: any =[];
   temp: any = [];
   constructor(public dialog: MatDialog) { }
 
@@ -40,9 +41,9 @@ export class DataGrComponent implements OnInit {
 
   public selectAllsetSelected(): void {
     // updates this.datagrid.selectedChanged multiple times as the number of users
-      for (let user of this.users) {
-          if (!this.datagrid.selection.isSelected(user)) {
-              this.datagrid.selection.setSelected(user, true);
+      for (let record of this.records) {
+          if (!this.datagrid.selection.isSelected(record)) {
+              this.datagrid.selection.setSelected(record, true);
             
           }
       }
@@ -50,7 +51,7 @@ export class DataGrComponent implements OnInit {
 
   public selectAllupdateCurrent(): void {
     // updates this.datagrid.selectedChanged once
-      this.datagrid.selection.updateCurrent(this.users, true);
+      this.datagrid.selection.updateCurrent(this.records, true);
   }
 
   clearSelection() {

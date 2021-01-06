@@ -13,14 +13,6 @@ const planOption = ['73/023','079/124', '079/125'];
   selector: 'app-group-search',
   templateUrl: './group-search.component.html',
   styleUrls: ['./group-search.component.css'],
-  template: `
-    <div class="row">
-      <formly-form [fields]="fields" [form]="form" ></formly-form>
-      <div class="col-2 text-right">
-        <button class="btn btn-danger" type="button" >-</button>
-      </div>
-    </div>
-  `,
 })
 export class GroupSearchComponent implements OnInit {
 

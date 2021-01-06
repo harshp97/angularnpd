@@ -4,33 +4,65 @@
          <img src="../assets/images/Hum_Logo_R_Drk_Green_RGB.png" href="javascript:void(0)"  width="100" height="45"  alt=""> 
         </li>
           <a href="#" class="nav-link">
-          <span class="title">Project NPD MF-1</span>
+          <span class="title"> NPD Application</span>
           </a>
   </div>
   <div class="header-actions">
       <clr-dropdown>
         <button clrDropdownTrigger class="nav-text" aria-label="open user profile">
-          hpatil4@humana.com 
-            <clr-icon shape="user" class="is-solid" size="25"></clr-icon>
+          <!--<clr-icon shape="user" class="is-solid" size="25"></clr-icon>-->
+          
+    <img src="../assets/images/user.png" class="img-usr" width="45" height="45" alt="" href="#" >
+          Harsh Patil
           </button>
           <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
             <a clrDropdownItem href="#" >About</a>
-            <a clrDropdownItem href="..." >Log out</a>
+            <a clrDropdownItem href="#" >Log out</a>
         </clr-dropdown-menu>
       </clr-dropdown>
   </div>
 </header>
-
 <nav class="subnav">
   <ul class="nav">
       <li class="nav-item">
         <a class="nav-link" href="#" routerLinkActive="Active" > Playbook Mapping Screen</a>
       </li>
       <li class=" nav-item">
-        <a href="#" class="active nav-link" routerLinkActive="Active" >Group Override</a>
+        <a href="#" class="active nav-link" routerLinkActive="Active" >Group General Override</a>
       </li>
       <li class="nav-item">
           <a class="nav-link" routerLinkActive="Active" >Reports</a>
       </li>
     </ul>
 </nav>
+
+<div class="sub-head">
+  <nav>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="group1" routerLinkActive="active"> Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="group2" routerLinkActive="active">Add Group General Override</a>
+        </li>
+      </ul> 
+  </nav>
+
+    <!--<mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Search
+      </ng-template>
+       <app-group-search></app-group-search>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Add Group General Override
+      </ng-template> 
+       <app-group2></app-group2>
+    </mat-tab>
+
+  </mat-tab-group>
+-->
+</div>

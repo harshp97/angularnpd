@@ -27,7 +27,6 @@
       .example-button-row {
         display: table-cell;
         width: 490px;
-       
       }
       
       .example-button-row .mat-button-base {
@@ -35,5 +34,5 @@
       }
     
       .aln-btn{
-          padding-left: 70%;
+          padding-left: 1%;
       }

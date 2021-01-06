@@ -4,12 +4,21 @@
     height: 65px;
     position: fixed;
     top: 0px;
-    overflow: hidden;
+    
 }
 .subnav{
     width: 100%;
     margin-top: 60px;
     top: 0px;
     position: fixed;
-    overflow: hidden;
+    margin-left: 0px;
+}
+
+.img-usr{
+    margin-right: 10px;
+}
+.sub-head{
+    margin-top: 95px; 
+    margin-left: 10px;
+    overflow: visible;    
 }

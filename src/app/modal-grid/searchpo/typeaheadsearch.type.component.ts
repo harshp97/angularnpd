@@ -21,7 +21,7 @@ import { switchMap } from 'rxjs/operators/switchMap';
       [formControl]="formControl">
     </ng-select>-->
     <div  class="col-2 ">
-      <button type="button" mat-raised-button color="primary" (click)="openbalert()">
+      <button type="button" mat-raised-button  style="background-color:#78BE20;color:white" (click)="openbalert()">
        <mat-icon>search</mat-icon>Search
       </button>
     </div>   

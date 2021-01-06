@@ -8,17 +8,17 @@
             <button type="button" mat-raised-button  (click)="selectAllupdateCurrent()"><mat-icon>add</mat-icon>Select All</button>
         </a>
         <a>
-            <button type="button" mat-raised-button  (click)="clearSelection()"> <mat-icon >close</mat-icon>clear  selection</button>
+            <button type="button" mat-raised-button  (click)="clearSelection()"> <mat-icon >close</mat-icon>Clear selection</button>
         </a> 
         </div>
       </div>
-        <clr-dg-action-bar *ngIf="selected.length">
-            <div  class="aln-btn">
-        <mat-toolbar>
+
+        <clr-dg-action-bar *ngIf="selected.length==1">
+          <mat-toolbar>
             <span class="example-spacer"></span>
             <section>
                 <div class="example-button-row">
-                    <button type="button" mat-raised-button color="primary" (click)="openDialog()">
+                    <button  type="button" mat-raised-button color="primary" (click)="openDialog()">
                         <mat-icon>edit</mat-icon>Edit
                     </button>
                      
@@ -27,8 +27,7 @@
                     </button>
                 </div>
             </section>
-        </mat-toolbar>
-            </div>
+          </mat-toolbar>
          </clr-dg-action-bar>
 
         
@@ -44,25 +43,25 @@
             <clr-dg-column clrDgField="planOwner">Plan Owner</clr-dg-column>
             <clr-dg-column clrDgField="states">State</clr-dg-column>
     
-            <clr-dg-row *clrDgItems="let user of users" [clrDgItem]="user">
-                <clr-dg-cell>{{user.planYear}}</clr-dg-cell>
-                <clr-dg-cell>{{user.planOption}}</clr-dg-cell>
-                <clr-dg-cell>{{user.loadType}}</clr-dg-cell>
-                <clr-dg-cell>{{user.basePlan}}</clr-dg-cell>
-                <clr-dg-cell>{{user.networkPhysician.primary}}</clr-dg-cell>
-                <clr-dg-cell>{{user.networkFacility.primary}}</clr-dg-cell>
-                <clr-dg-cell>{{user.networkPhysician.secondary}}</clr-dg-cell>
-                <clr-dg-cell>{{user.networkFacility.secondary}}</clr-dg-cell>
-                <clr-dg-cell>{{user.planOwner}}</clr-dg-cell>
-                <clr-dg-cell>{{user.states}}</clr-dg-cell>
+            <clr-dg-row *clrDgItems="let record of records" [clrDgItem]="record">
+                <clr-dg-cell>{{record.planYear}}</clr-dg-cell>
+                <clr-dg-cell>{{record.planOption}}</clr-dg-cell>
+                <clr-dg-cell>{{record.loadType}}</clr-dg-cell>
+                <clr-dg-cell>{{record.basePlan}}</clr-dg-cell>
+                <clr-dg-cell>{{record.networkPhysician.primary}}</clr-dg-cell>
+                <clr-dg-cell>{{record.networkFacility.primary}}</clr-dg-cell>
+                <clr-dg-cell>{{record.networkPhysician.secondary}}</clr-dg-cell>
+                <clr-dg-cell>{{record.networkFacility.secondary}}</clr-dg-cell>
+                <clr-dg-cell>{{record.planOwner}}</clr-dg-cell>
+                <clr-dg-cell>{{record.states}}</clr-dg-cell>
             </clr-dg-row>
     
             <clr-dg-footer>
                 {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}}
-                of {{pagination.totalItems}} users
+                of {{pagination.totalItems}} Records
                 <clr-dg-pagination #pagination></clr-dg-pagination>
             </clr-dg-footer>
-     </clr-datagrid>
+     </clr-datagrid >
 
       </div>
       

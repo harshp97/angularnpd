@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="sub-head">
+    <!--<div class="sub-head">
         <nav class="subnav">
           <ul class="nav">
               <li class="nav-item">
@@ -10,21 +10,16 @@
               </li>
             </ul> 
         </nav>
-    </div>
+    </div>-->
 
-    <div  style=" overflow: visible; margin-top: 25px; ">
+    <div  style=" overflow: visible; margin-top: 10px; ">
 
         <form  [formGroup]="form" (ngSubmit)="submit()">
             <formly-form  [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
         
-        <div class="overf">
+           <div class="overf">
             <app-data-gr></app-data-gr>
-            
-        </div>
-
-       </form>
-
+           </div>
+        </form>
     </div>
-
-
 </div>

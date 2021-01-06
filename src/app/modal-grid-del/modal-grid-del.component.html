@@ -5,12 +5,9 @@
           <formly-form [model]="model" [fields]="fields"  [form]="form" [options]="options"></formly-form>
           <div >
             <button type="submit" mat-raised-button mat-dialog-close color="warn" (click)="deleteAlert()"><mat-icon>delete</mat-icon>Delete</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="cancel" mat-raised-button mat-dialog-close (click)="cancelAlert()"><mat-icon>cancel</mat-icon>Cancel</button>   
+            <button type="cancel" mat-raised-button mat-dialog-close color="#78BE20" (click)="cancelAlert()"><mat-icon>cancel</mat-icon>Cancel</button>   
           </div>
         </form>     
     </div>
       <br/><br/>
-    <div>
-      <pre> {{model | json }} </pre>
-    </div>
 </mat-dialog-content>

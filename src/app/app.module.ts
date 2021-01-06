@@ -58,7 +58,7 @@ const appearance: MatFormFieldDefaultOptions = {
     DataGrComponent,
     ModalGridComponent,
     FormlySearchFieldTypeahead,
-    ModalGridDelComponent
+    ModalGridDelComponent,
   ],
   imports: [
     BrowserModule,
